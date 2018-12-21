@@ -1,0 +1,37 @@
+// 解决table错乱
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+
+body .el-table colgroup.gutter {
+  display: table-cell !important;
+}
+
+// side
+.el-menu:not(.el-menu--collapse) {
+  width: 200px;
+  border: none;
+}
+.submenu-title-two {
+  .el-menu-item {
+      background-color: #1f2d3d !important;
+      &:hover {
+        background-color: #001528 !important;
+      }
+  }
+}
+.submenu-title-three.el-submenu {
+  .el-submenu__title{
+    background-color: #1f2d3d !important;
+    &:hover {
+      background-color: #001528 !important;
+    }
+  }
+}
+.el-menu--popup {
+  padding: 0;
+}
+.nav-link {
+  text-decoration: none;
+}
+
