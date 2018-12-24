@@ -14,14 +14,22 @@ body .el-table colgroup.gutter {
 }
 .submenu-title-two {
   .el-menu-item {
-      background-color: #1f2d3d !important;
-      &:hover {
-        background-color: #001528 !important;
-      }
+    background-color: #1f2d3d !important;
+    &:hover {
+      background-color: #001528 !important;
+    }
   }
 }
 .submenu-title-three.el-submenu {
   .el-submenu__title{
+    background-color: #1f2d3d !important;
+    &:hover {
+      background-color: #001528 !important;
+    }
+  }
+}
+.el-menu--vertical {
+  .el-menu-item {
     background-color: #1f2d3d !important;
     &:hover {
       background-color: #001528 !important;

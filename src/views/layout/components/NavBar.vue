@@ -46,9 +46,9 @@ const appModule = namespace("app");
 export default class NavBar extends Vue {
   private isActive: boolean = false;
   @appModule.Action("sideToggle") toggleSideBar!: any;
-  created() {
-    console.log(this.$route.matched);
-  }
+  // created() {
+  //   console.log(this.$route.matched);
+  // }
   handleClick(): void {
     this.isActive = !this.isActive;
     this.toggleSideBar();

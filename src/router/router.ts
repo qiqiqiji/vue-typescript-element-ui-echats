@@ -69,6 +69,11 @@ export default new Router({
           component: () => import("@/views/configuration/log/log.vue")
         }
       ]
+    },
+    {
+      path: "*",
+      name: "404",
+      component: () => import("@/views/404.vue")
     }
   ]
 });

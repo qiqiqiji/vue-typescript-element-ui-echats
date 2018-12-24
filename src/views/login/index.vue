@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <h1 style="color: #eee; text-align: center;">网络安全业务应用安全平台</h1>
+    <h1 style="color: #eee; text-align: center;">炼石CipherGateway | 密钥生命周期管理系统</h1>
     <el-form
       :model="loginForm"
       :rules="loginRules"

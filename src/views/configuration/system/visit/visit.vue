@@ -113,13 +113,17 @@ export default class Log extends Vue {
   }
   private initData(): void {
     getLoginConfig().then((result: any) => {
-      this.loginConfigForm.failNum = result.data.retryNumber;
-      this.loginConfigForm.loginFailTime = result.data.failedLockTime;
-      this.loginConfigForm.logoutTime = result.data.expire;
+      ({
+        retryNumber: this.loginConfigForm.failNum,
+        failedLockTime: this.loginConfigForm.loginFailTime,
+        expire: this.loginConfigForm.logoutTime
+      } = result.data);
     });
     getPwdConfig().then((result: any) => {
-      this.pwdConfigForm.minPwdLength = result.data.minLengthOfPasswordManager;
-      this.pwdConfigForm.pwdStyle = result.data.passwordStyleManager;
+      ({
+        minLengthOfPasswordManager: this.pwdConfigForm.minPwdLength,
+        passwordStyleManager: this.pwdConfigForm.pwdStyle
+      } = result.data);
     });
   }
   private saveSettings(data: string): void {
